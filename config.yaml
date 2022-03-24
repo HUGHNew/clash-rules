@@ -1,0 +1,4 @@
+rules:
+    - 'DOMAIN-SUFFIX,developer.mozilla.org,DIRECT'
+    - 'DOMAIN-SUFFIX,com.cn,DIRECT'
+    - 'DOMAIN-SUFFIX,processon.com,DIRECT'
