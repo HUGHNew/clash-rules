@@ -16,4 +16,4 @@ merge_keys:
   - rules
 ```
 
-For example, the `<merge-file>` will preppend the `rules` instead of using the `rules` in defaults.yaml only.
+For example, the `<merge-file>` will prepend the `rules` instead of using the `rules` in defaults.yaml only.
