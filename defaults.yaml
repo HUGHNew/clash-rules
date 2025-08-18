@@ -1,0 +1,41 @@
+# meta value for merge
+merge_keys:
+  - dns
+  - rules
+
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  fake-ip-filter:
+    - "*.lan"
+    - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
+    - xbox.*.microsoft.com
+    - "*.xboxlive.com"
+    - "*.teafone.com"
+    - "*.sktswe.net"
+    - rtc.goodfone.co.kr
+    - "*.chattti.com"
+  nameserver:
+    - 1.1.1.1
+    - tls://1.1.1.1:853
+
+external-controller: 127.0.0.1:9090
+rules:
+    - 'DOMAIN-SUFFIX,ollama.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hf-mirror.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ddys.pro,DIRECT'
+    - 'DOMAIN-SUFFIX,dl.google.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dockepull.pw,DIRECT'
+    - 'DOMAIN-SUFFIX,dockepull.cn,DIRECT'
+    - 'DOMAIN-SUFFIX,bytedance.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aliyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,huawei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,developer.mozilla.org,DIRECT'
+    - 'DOMAIN-SUFFIX,com.cn,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-SUFFIX,processon.com,DIRECT'
