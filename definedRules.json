@@ -1,0 +1,33 @@
+[
+    "DOMAIN-SUFFIX,chatgpt.com,OpenAI",
+    "DOMAIN-SUFFIX,huggingface.co,Proxies",
+
+    "DOMAIN-SUFFIX,thdog.moe,DIRECT",
+    "DOMAIN-SUFFIX,agedm.org,DIRECT",
+    "DOMAIN-SUFFIX,shidai.tv,DIRECT",
+    "DOMAIN-SUFFIX,ddys.pro,DIRECT",
+    
+    "DOMAIN-SUFFIX,ccfddl.top,DIRECT",
+    "DOMAIN-SUFFIX,ollama.com,DIRECT",
+    "DOMAIN,dockerpull.pw,DIRECT",
+    "DOMAIN,dl.google.com,DIRECT",
+    "DOMAIN-SUFFIX,hf-mirror.com,DIRECT",
+    "DOMAIN-SUFFIX,deepl.com,DIRECT",
+
+    "DOMAIN-SUFFIX,qq.com,DIRECT",
+    "DOMAIN-SUFFIX,tencent.com,DIRECT",
+    "DOMAIN-SUFFIX,huawei.com,DIRECT",
+    "DOMAIN-SUFFIX,aliyun.com,DIRECT",
+    "DOMAIN-SUFFIX,qichacha.com,DIRECT",
+    "DOMAIN-SUFFIX,feishu.com,DIRECT",
+    "DOMAIN-SUFFIX,mihoyo.com,DIRECT",
+    "DOMAIN-SUFFIX,cn,DIRECT",
+    "DOMAIN-SUFFIX,cnki.net,DIRECT",
+
+    "DOMAIN-SUFFIX,forums.developer.nvidia.com,DIRECT",
+    "DOMAIN-SUFFIX,overleaf.com,DIRECT",
+    "DOMAIN-SUFFIX,overleafusercontent.com,DIRECT",
+    "DOMAIN-SUFFIX,developer.mozilla.org,DIRECT",
+    "DOMAIN-SUFFIX,processon.com,DIRECT",
+    "DOMAIN-SUFFIX,cha.fan,DIRECT"
+]

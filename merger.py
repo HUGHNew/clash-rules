@@ -8,6 +8,7 @@
 import argparse
 import os
 from typing import Union
+import json
 
 import requests
 import yaml
@@ -41,6 +42,7 @@ def merge_config_item(
         for k, v in value.items():
             merge_config_item(origin[key], v, k, merge_keys)
     elif isinstance(value, list):
+        # require dedup?
         value.extend(origin[key])
         origin[key] = value
     else:
@@ -50,6 +52,10 @@ def merge_config_item(
 def merge_config(config_file: str, override_file: str) -> dict:
     config = safe_load_yaml(config_file)
     config_overrides = safe_load_yaml(override_file)
+    rule_file = os.path.join(os.path.dirname(override_file), "definedRules.json")
+    with open(rule_file) as fd:
+        rules = json.load(fd)
+    config_overrides["rules"] = rules
 
     merge_keys = config_overrides.pop("merge_keys")
     for key, value in config_overrides.items():
