@@ -32,6 +32,11 @@ def safe_dump_yaml(data: dict, file: str):
         yaml.safe_dump(data, f, allow_unicode=True, sort_keys=False)
 
 
+def load_json(file: str):
+    with open(file, "r") as f:
+        return json.load(f)
+
+
 def merge_config_item(
     origin: dict, value: Union[dict, list, object], key: str, merge_keys: list
 ):
@@ -49,10 +54,10 @@ def merge_config_item(
         origin[key] = value
 
 
-def merge_config(config_file: str, override_file: str) -> dict:
+def merge_config(config_file: str, rule_json: str, override_file: str) -> dict:
     config = safe_load_yaml(config_file)
     config_overrides = safe_load_yaml(override_file)
-    rule_file = os.path.join(os.path.dirname(override_file), "definedRules.json")
+    rule_file = os.path.join(os.path.dirname(override_file), rule_json)
     with open(rule_file) as fd:
         rules = json.load(fd)
     config_overrides["rules"] = rules
@@ -67,21 +72,26 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("url", type=str, help="remote config from url")
     parser.add_argument(
-        "override", type=str, default="", help="overrides to merge with config"
+        "override", type=str, default="defaults.yaml", help="overrides in yaml"
     )
     parser.add_argument(
-        "storage",
+        "rules", type=str, default="definedRules.json", help="rules from json"
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
         type=str,
+        default="config.yaml",
         help="storage path for configs",
     )
     return parser.parse_args()
 
 
-def update_config_with_defaults(url: str, default: str, storage: str):
-    config = merge_config(url, default)
+def update_config_with_defaults(url: str, rules: str, default: str, storage: str):
+    config = merge_config(url, rules, default)
     safe_dump_yaml(config, storage)
 
 
 if __name__ == "__main__":
     args = get_args()
-    update_config_with_defaults(args.url, args.override, args.storage)
+    update_config_with_defaults(args.url, args.rules, args.override, args.output)

@@ -4,7 +4,7 @@ Merger for clash rules (yaml)
 
 Usage:
 ```bash
-uv run merger.py <subscription-url-or-local-file> defaults.yaml <merge-file>
+uv run merger.py <subscription-url-or-local-file> -o <merge-file>
 ```
 
 
