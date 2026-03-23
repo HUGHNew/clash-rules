@@ -14,7 +14,6 @@
 
     "DOMAIN-SUFFIX,ccfddl.top,DIRECT",
     "DOMAIN-SUFFIX,hf-mirror.com,DIRECT",
-    "DOMAIN,dockerpull.pw,DIRECT",
     "DOMAIN,dl.google.com,DIRECT",
     "DOMAIN-SUFFIX,deepl.com,DIRECT",
 
@@ -37,5 +36,9 @@
     "DOMAIN-SUFFIX,overleafusercontent.com,DIRECT",
     "DOMAIN-SUFFIX,developer.mozilla.org,DIRECT",
     "DOMAIN-SUFFIX,processon.com,DIRECT",
-    "DOMAIN-SUFFIX,cha.fan,DIRECT"
+    "DOMAIN-SUFFIX,cha.fan,DIRECT",
+
+    "DOMAIN-SUFFIX,swscan.apple.com,REJECT",
+    "DOMAIN-SUFFIX,mesu.apple.com,REJECT",
+    "DOMAIN-SUFFIX,gdmf.apple.com,REJECT"
 ]
