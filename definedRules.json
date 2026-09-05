@@ -2,8 +2,8 @@
     "DOMAIN-SUFFIX,chatgpt.com,OpenAI",
     "DOMAIN-SUFFIX,huggingface.co,Proxies",
 
-    "DOMAIN-SUFFIX,thdog.moe,DIRECT",
     "DOMAIN-SUFFIX,agedm.org,DIRECT",
+    "DOMAIN-SUFFIX,agedm.io,DIRECT",
     "DOMAIN-SUFFIX,shidai.tv,DIRECT",
     "DOMAIN-SUFFIX,ddys.pro,DIRECT",
     
@@ -17,7 +17,6 @@
     "DOMAIN,dl.google.com,DIRECT",
     "DOMAIN-SUFFIX,deepl.com,DIRECT",
 
-    "DOMAIN-SUFFIX,qq.com,DIRECT",
     "DOMAIN-SUFFIX,tencent.com,DIRECT",
     "DOMAIN-SUFFIX,huawei.com,DIRECT",
     "DOMAIN-SUFFIX,aliyun.com,DIRECT",
@@ -36,9 +35,16 @@
     "DOMAIN-SUFFIX,overleafusercontent.com,DIRECT",
     "DOMAIN-SUFFIX,developer.mozilla.org,DIRECT",
     "DOMAIN-SUFFIX,processon.com,DIRECT",
-    "DOMAIN-SUFFIX,cha.fan,DIRECT",
 
     "DOMAIN-SUFFIX,swscan.apple.com,REJECT",
     "DOMAIN-SUFFIX,mesu.apple.com,REJECT",
-    "DOMAIN-SUFFIX,gdmf.apple.com,REJECT"
+    "DOMAIN-SUFFIX,gdmf.apple.com,REJECT",
+
+    "DOMAIN-SUFFIX,dldir1.qq.com,REJECT",
+    "DOMAIN-SUFFIX,dldir1v6.qq.com,REJECT",
+    "DOMAIN-SUFFIX,dldir2.qq.com,REJECT",
+    "DOMAIN-SUFFIX,dldir3.qq.com,REJECT",
+    "DOMAIN-SUFFIX,qqdl.gtimg.cn,REJECT",
+    "DOMAIN-SUFFIX,qqupdate.qq.com,REJECT",
+    "DOMAIN,mac.weixin.qq.com,REJECT"
 ]
